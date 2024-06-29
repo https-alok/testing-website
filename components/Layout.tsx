@@ -394,7 +394,7 @@ const Footer = () => (
     </div>
     <div className='text-white font-normal text-center relative m-0 ml-0 mr-1 px-4'>
       <p>
-        Copyright © 2024 JSON Schema.&nbsp;
+        Copyright © 2024 JSON Schema Org.&nbsp;
         <span className='block sm:inline sm:mb-0'>All rights reserved.</span>
       </p>
     </div>
