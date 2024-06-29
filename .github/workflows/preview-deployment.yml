@@ -81,5 +81,5 @@ jobs:
                   accountId: ${{ secrets.CF_ACCOUNT_ID }}
                   githubToken: ${{ secrets.GITHUB_TOKEN }}
                   projectName: testing-website
-                  directory: .next
+                  directory: out
                   deploymentName: Preview
