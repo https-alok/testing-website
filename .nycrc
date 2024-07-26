@@ -1,0 +1,24 @@
+{
+  "all": true,
+  "extends": "@istanbuljs/nyc-config-typescript",
+  "include": [
+    "pages/**/*.tsx",
+    "components/**/*.tsx"
+  ],
+  "exclude": [
+    "**/*.d.ts",
+    "**/*.cy.{js,jsx,ts,tsx}",
+    "cypress/**/*.*"
+  ],
+  "reporter": [
+    "text",
+    "json",
+    "html"
+  ],
+  "check-coverage": true,
+  "lines": 75,
+  "statements": 75,
+  "functions": 75,
+  "branches": 75,
+  "$schema": "https://json.schemastore.org/nycrc"
+}
