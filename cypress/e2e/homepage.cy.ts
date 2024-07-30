@@ -1,0 +1,16 @@
+// describe('visit homepage', ()=>{
+//     it('should visit the homepage', ()=>{
+//         cy.visit('http://localhost:3000')
+//         cy.wait(1000)
+//         cy.visit('http://localhost:3000/docs')
+//         cy.wait(1000)
+//         cy.visit('http://localhost:3000/specification')
+//         cy.wait(1000)
+//         cy.visit('http://localhost:3000/community')
+//         cy.wait(1000)
+//         cy.visit('http://localhost:3000/blog')
+//         cy.wait(1000)
+//         cy.visit('http://localhost:3000/implementations')
+//         // cy.contains('Schema')
+//     })
+// })

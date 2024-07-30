@@ -39,7 +39,7 @@ const CardBody = ({
           <img src={image} className='h-32 p-2' data-test='card-image' />
         )}
       </div>
-      <div className='flex flex-row items-start mb-6' data-test="card-header">
+      <div className='flex flex-row items-start mb-6' data-test='card-header'>
         {icon && (
           <span className='mr-6 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-lg border bg-blue-200 px-3 text-gray-900 dark:text-white'>
             <img
@@ -57,12 +57,15 @@ const CardBody = ({
           {title}
         </p>
       </div>
-      <hr className='mb-4 mt-3.5 h-px border-0 bg-gray-400' data-test='card-hr' />
+      <hr
+        className='mb-4 mt-3.5 h-px border-0 bg-gray-400'
+        data-test='card-hr'
+      />
       <p
         className={`mb-8 text-black mt-5 dark:text-white  ${bodyTextSizeClasses[bodyTextSize || 'medium']} `}
         data-test='card-body'
       >
-        {extended && <span dangerouslySetInnerHTML={{ __html: body }}/>}
+        {extended && <span dangerouslySetInnerHTML={{ __html: body }} />}
         {!extended && <TextTruncate element='span' line={3} text={body} />}
       </p>
       {link && (

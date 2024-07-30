@@ -62,7 +62,11 @@ describe('Card Component', () => {
   });
 
   it('should render Roadmap card with image', () => {
-    const props = { ...RoadmapProps, icon: undefined, image: '/images/roadmap.jpg' };
+    const props = {
+      ...RoadmapProps,
+      icon: undefined,
+      image: '/images/roadmap.jpg',
+    };
     cy.mount(<Card {...props} />);
     cy.get('[data-test="card-icon"]').should('not.exist');
     cy.get('[data-test="card-image"]').should('have.attr', 'src', props.image);
@@ -73,7 +77,7 @@ describe('Card Component', () => {
     cy.mount(<Card {...props} />);
     // cy.get('[data-test="card-body"]').should('not.have.text', props.body);
     cy.get('[data-test="card-body"]').find('span').should('exist');
-  })
+  });
 
   // Render the Card with some missing props
   it('should render card with some missing props correctly', () => {

@@ -1,6 +1,7 @@
 import { defineConfig } from 'cypress';
 
 export default defineConfig({
+  projectId: 'f5xe8r',
   component: {
     devServer: {
       framework: 'next',
@@ -8,12 +9,14 @@ export default defineConfig({
     },
     specPattern: 'cypress/components/**/*.cy.{js,jsx,ts,tsx}',
     setupNodeEvents(on, config) {
+      // eslint-disable-next-line @typescript-eslint/no-var-requires
       require('@cypress/code-coverage/task')(on, config);
       return config;
     },
   },
   e2e: {
     setupNodeEvents(on, config) {
+      // eslint-disable-next-line @typescript-eslint/no-var-requires
       require('@cypress/code-coverage/task')(on, config);
       return config;
     },

@@ -388,6 +388,7 @@ export default function JsonEditor({ initialCode }: { initialCode: string }) {
                 className={classnames('pb-2', textStyles)}
                 title={leaf.syntaxPart?.type}
                 {...attributes}
+                data-test='json-editor-link'
               >
                 {children}
               </span>
