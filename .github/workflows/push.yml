@@ -52,7 +52,7 @@ jobs:
         run: yarn run build
 
       - name: Run dev server for e2e testing
-        run: yarn run dev
+        run: yarn run dev &
 
       - name: Run Test & generate code-coverage report
         run: yarn run test:coverage:all
