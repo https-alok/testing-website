@@ -117,9 +117,12 @@ jobs:
       - name: Run Test & generate code-coverage report
         run: yarn run test:coverage:all
 
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4.0.1
+      - name: Present and Upload coverage to Codecov as ${{env.CODECOV_UNIQUE_NAME}}
+        uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+          verbose: true
+          fail_ci_if_error: false
+          name: '${{env.CODECOV_UNIQUE_NAME}}'
 
   
