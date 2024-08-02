@@ -24,7 +24,8 @@ This repository contains the sources of JSON Schema website:
 
 * It's powered by Next.js,
 * It uses Tailwind CSS framework,
-* It's build and deployed with cloudflare pages.
+
+* It'sbuild and deployed with cloudflare pages
 
 ## Run locally
 
